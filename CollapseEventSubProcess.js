@@ -30,7 +30,7 @@ export default class CollapseEventSubProcess {
 
 }
 
-CollapseEventSubProcess.inject = [
+CollapseEventSubProcess.$inject = [
   'popupMenu',
   'modeling'
 ];
