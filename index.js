@@ -1,7 +1,8 @@
-import PaletteModule from './palette';
-import CollapseModule from './popup';
+import CollapseEventSubProcess from './CollapseEventSubProcess';
 
-// Convenience module bundling both parts: the create palette entry and the collapse/expand toggle.
+// The collapse/expand toggle for event sub-processes — the default export. Add the './palette' export as
+// well for a palette entry that creates event sub-processes.
 export default {
-  __depends__: [ PaletteModule, CollapseModule ]
+  __init__: [ 'eventSubProcessCollapse' ],
+  eventSubProcessCollapse: [ 'type', CollapseEventSubProcess ]
 };

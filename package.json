@@ -1,12 +1,11 @@
 {
-  "name": "bpmn-js-event-subprocesses",
+  "name": "bpmn-js-collapse-event-subprocess",
   "description": "A bpmn-js module for creating, collapsing, and expanding event subprocesses",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
-    "./palette": "./palette.js",
-    "./popup": "./popup.js"
+    "./palette": "./palette.js"
   },
   "keywords": [
     "bpmn-js",
@@ -20,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bpmn-os/bpmn-js-event-subprocesses.git"
+    "url": "git+https://github.com/bpmn-os/bpmn-js-collapse-event-subprocess.git"
   },
   "dependencies": {},
   "devDependencies": {}
