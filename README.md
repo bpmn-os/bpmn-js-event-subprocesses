@@ -20,7 +20,7 @@ new BpmnModeler({
 
 ### Palette
 
-The palette entry creates an expanded event sub-process containing a start event.
+The palette entry creates an expanded event sub-process.
 
 ```javascript
 import EventSubProcessPaletteEntry from 'bpmn-js-event-subprocesses/palette';
