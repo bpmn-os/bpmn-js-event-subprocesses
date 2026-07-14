@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpmn-os/bpmn-js-event-subprocesses"
+    "url": "git+https://github.com/bpmn-os/bpmn-js-event-subprocesses.git"
   },
   "dependencies": {},
   "devDependencies": {}
