@@ -1,6 +1,6 @@
 # bpmn-js-event-subprocesses
 
-This [bpmn-js](https://github.com/bpmn-io/bpmn-js) extension adds support for event sub-processes: a palette entry to create one, a popup menu entry to collapse or expand it, and an event-type decorator for collapsed event sub-processes.
+This [bpmn-js](https://github.com/bpmn-io/bpmn-js) extension adds support for event sub-processes: a palette entry to create one and a popup menu entry to collapse or expand it.
 
 ## Usage
 
@@ -8,7 +8,7 @@ Each part is a separate diagram-js module. The modules can be added to `addition
 
 ### Everything
 
-The default export bundles the palette entry, the popup menu entry, and the decorator.
+The default export bundles the palette entry and the popup menu entry.
 
 ```javascript
 import EventSubProcesses from 'bpmn-js-event-subprocesses';
@@ -20,7 +20,7 @@ new BpmnModeler({
 
 ### Palette
 
-The palette entry creates an event sub-process.
+The palette entry creates an expanded event sub-process containing a start event.
 
 ```javascript
 import EventSubProcessPaletteEntry from 'bpmn-js-event-subprocesses/palette';
@@ -32,25 +32,13 @@ new BpmnModeler({
 
 ### Popup menu
 
-The popup menu entry collapses or expands an event sub-process. It depends on the decorator, so collapsed event sub-processes render correctly.
+The popup menu entry collapses or expands an event sub-process.
 
 ```javascript
 import EventSubProcessPopupMenu from 'bpmn-js-event-subprocesses/popup';
 
 new BpmnModeler({
   additionalModules: [ EventSubProcessPopupMenu ]
-});
-```
-
-### Decorator
-
-The decorator renders collapsed event sub-processes in a read-only viewer.
-
-```javascript
-import EventSubProcessDecorator from 'bpmn-js-event-subprocesses/decorator';
-
-new BpmnViewer({
-  additionalModules: [ EventSubProcessDecorator ]
 });
 ```
 

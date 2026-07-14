@@ -6,8 +6,7 @@
   "exports": {
     ".": "./index.js",
     "./palette": "./palette.js",
-    "./popup": "./popup.js",
-    "./decorator": "./decorator.js"
+    "./popup": "./popup.js"
   },
   "keywords": [
     "bpmn-js",

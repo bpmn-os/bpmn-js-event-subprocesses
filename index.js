@@ -1,8 +1,7 @@
 import PaletteModule from './palette';
 import CollapseModule from './popup';
 
-// Convenience module bundling everything: the create palette entry, the collapse/expand toggle, and the
-// collapsed event sub-process decorator (the decorator comes in via the collapse module's dependency).
+// Convenience module bundling both parts: the create palette entry and the collapse/expand toggle.
 export default {
   __depends__: [ PaletteModule, CollapseModule ]
 };
